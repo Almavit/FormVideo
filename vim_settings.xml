@@ -2,6 +2,14 @@
   <component name="VimEditorSettings">
     <editor />
   </component>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search />
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
   <component name="VimKeySettings">
     <shortcut-conflicts>
       <shortcut-conflict owner="vim">
@@ -14,6 +22,88 @@
         <text>ctrl pressed C</text>
       </shortcut-conflict>
     </shortcut-conflicts>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <filemarks>
+      <file name="N:/python/Start Python/main.py" timestamp="1573483868157">
+        <mark key="[" line="13" column="16" />
+        <mark key="]" line="11" column="23" />
+        <mark key="." line="11" column="23" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1573412938664">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Python Console" timestamp="1574968790310">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="N:/python/OpenCV-start/asd.py" timestamp="1574968611237">
+        <mark key="[" line="5" column="14" />
+      </file>
+      <file name="/injection.txt" timestamp="1573469927394">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="N:/python/Start Python/video.py" timestamp="1573482834478">
+        <mark key="[" line="0" column="7" />
+        <mark key="]" line="0" column="10" />
+        <mark key="." line="0" column="10" />
+      </file>
+      <file name="N:/python/FormVideo/run.py" timestamp="1573483982068">
+        <mark key="[" line="7" column="21" />
+      </file>
+      <file name="/Dummy.regexp" timestamp="1573469927411">
+        <mark key="[" line="0" column="0" />
+      </file>
+    </filemarks>
+    <jumps />
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="1" type="2">
+        <text># When everything is done, release the capture
+# video_capture.release()
+cv2.destroyAllWindows()
+import cv2
+
+camera_index=1
+cam = cv2.VideoCapture(1)
+if not cam.read()[0]:
+    cam = cv2.VideoCapture(0)
+    camera_index=0
+
+while True:
+    ret, frame = cam.read()
+    cv2.imshow(f&quot;image from camera {camera_index}&quot;, frame)
+    if not ret:
+        break
+    k = cv2.waitKey(1)
+    if k%256 == 27:
+        # ESC pressed
+        print(&quot;Escape hit, closing...&quot;)
+        break
+
+cam.release()
+cv2.destroyAllWindows()</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>0</text>
+      </register>
+      <register name="2" type="2">
+        <text>print(&quot;Hello World!&quot;)</text>
+      </register>
+      <register name="3" type="2">
+        <text>import numpy as np</text>
+      </register>
+      <register name="-" type="4">
+        <text>0</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
   </component>
   <component name="VimSettings">
     <state version="6" enabled="false" />
