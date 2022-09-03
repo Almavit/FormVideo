@@ -1,10 +1,10 @@
 <templateSet group="HTML/XML">
-  <template name="{%" value="{%  %}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="{%" value="{% $SELECTION$ %}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="{{" value="{{   }}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="{{" value="{{ $SELECTION$ }}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
