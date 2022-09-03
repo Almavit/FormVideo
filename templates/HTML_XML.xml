@@ -1,0 +1,17 @@
+<templateSet group="HTML/XML">
+  <template name="{%" value="{%  %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="{{" value="{{   }}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="{" value="{% block $SELECTION$ %}{% endblock %}" shortcut="TAB" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
